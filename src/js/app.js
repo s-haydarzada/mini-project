@@ -63,54 +63,54 @@ const result = setInterval(function () {
 
 // 3.Products
 
-const products=[
+const products = [
     {
-        "id":0,
-        "name":"Bloodborne",
-        "img":"/src/img/card1.jpg",
-        "price":50.00,
-        "old_price":40.55
+        id: 0,
+        name: "Bloodborne",
+        img: "/src/img/card1.jpg",
+        price: 50.00,
+    old_price: 40.55
     },
     {
-        "id":1,
-        "name":"Bloodborne",
-        "img":"/src/img/card2.jpg",
-        "price":60.00,
+        id: 1,
+        name: "Bloodborne",
+        img: "/src/img/card2.jpg",
+        price: 60.00,
     },
     {
-        "id":2,
-        "name":"Bloodborne",
-        "img":"/src/img/card3.jpg",
-        "price":34.99,
-        "old_price":30.75
+        id: 2,
+        name: "Bloodborne",
+        img: "/src/img/card3.jpg",
+        price: 34.99,
+        old_price: 30.75
     },
     {
-        "id":3,
-        "name":"Bloodborne",
-        "img":"/src/img/card4.jpg",
-        "price":25.80,
+        id: 3,
+        name: "Bloodborne",
+        img: "/src/img/card4.jpg",
+        price: 25.80,
     },
     {
-        "id":4,
-        "name":"Bloodborne",
-        "img":"/src/img/card5.jpg",
-        "price":20.50,
-        "old_price":45.50
+        id: 4,
+        name: "Bloodborne",
+        img: "/src/img/card5.jpg",
+        price: 20.50,
+        old_price: 45.50
     },
     {
-        "id":5,
-        "name":"Bloodborne",
-        "img":"/src/img/card6.jpg",
-        "price":77.00,
+        id: 5,
+        name: "Bloodborne",
+        img: "/src/img/card6.jpg",
+        price: 77.00,
     },
 ]
 
 
-let products_container=document.querySelector(".product_items");
-products.map((item)=>{
-    
+let products_container = document.querySelector(".product_items");
+products.map((item) => {
+
     const hasOldPrice = typeof item.old_price !== 'undefined';
-    
+
     const product = `<div class="product_item">
     <div class="product_img">
       <img src=${item.img} alt="" />
@@ -132,5 +132,42 @@ products.map((item)=>{
     <button class="product_btn">Add to Cart</button>
   </div>`
 
-  products_container.innerHTML+=product
+    products_container.innerHTML += product
 })
+
+// 4.Test
+
+
+let user = document.querySelectorAll(".user_login_icon");
+let user_container = document.querySelector(".user_container")
+
+
+user.forEach((item) => {
+    item.addEventListener("click", function () {
+        if (user_container.style.display = "none") {
+            user_container.style.display = "block"
+        } else {
+            user_container.style.display = "none";
+        }
+    })
+})
+
+// 5.Filter
+
+// const filter_btn = document.getElementById("filter_btn");
+
+// let myInput=document.getElementById("inpt");
+// const minValue = myInput.getAttribute("min");
+// const maxValue = myInput.getAttribute("max");
+// const minPrice = minValue;
+// const maxPrice = maxValue;
+// function filterProductsByPrice(products, minPrice, maxPrice) {
+//     return products.filter(product => product.price >= minPrice && product.price <= maxPrice);
+// }
+// const filteredProducts = filterProductsByPrice(products, minPrice, maxPrice);
+
+// filteredProducts.forEach(product => {
+//     const listItem = document.createElement("li");
+//     listItem.textContent = `${product.name} - ${product.price} TL`;
+//     products_container.appendChild(listItem);
+//   });

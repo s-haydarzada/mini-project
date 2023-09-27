@@ -33,6 +33,25 @@
                       DEMOS
                       <i class="fa-solid fa-caret-down"></i>
                     </div>
+                    <div class="bottom">
+                      <ul class="inner_ul">
+                        <li class="inner_menu_item">
+                          <a href="#">Dark</a>
+                        </li>
+                        <li class="inner_menu_item">
+                          <a href="#">Shooter</a>
+                        </li>
+                        <li class="inner_menu_item">
+                          <a href="#">Anime</a>
+                        </li>
+                        <li class="inner_menu_item">
+                          <a href="#">Light</a>
+                        </li>
+                        <li class="inner_menu_item">
+                          <a href="#">Landing</a>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                   <li class="navbar_menu_item">
                     <div class="top">
@@ -40,31 +59,50 @@
                       <br />
                       <span>games</span>
                     </div>
-                    <!-- <div class="bottom">
-                        <ul class="inner_ul">
-                          <li class="inner_menu_item">
-                            <a href="#">Dark</a>
-                          </li>
-                          <li class="inner_menu_item">
-                            <a href="#">Shooter</a>
-                          </li>
-                          <li class="inner_menu_item">
-                            <a href="#">Anime</a>
-                          </li>
-                          <li class="inner_menu_item">
-                            <a href="#">Light</a>
-                          </li>
-                          <li class="inner_menu_item">
-                            <a href="#">Landing</a>
-                          </li>
-                        </ul>
-                      </div> -->
+                    <div class="bottom">
+                      <ul class="inner_ul">
+                        <li class="inner_menu_item">
+                          <a href="#">Dark</a>
+                        </li>
+                        <li class="inner_menu_item">
+                          <a href="#">Shooter</a>
+                        </li>
+                        <li class="inner_menu_item">
+                          <a href="#">Anime</a>
+                        </li>
+                        <li class="inner_menu_item">
+                          <a href="#">Light</a>
+                        </li>
+                        <li class="inner_menu_item">
+                          <a href="#">Landing</a>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                   <li class="navbar_menu_item">
                     <div class="top">
                       BLOG<i class="fa-solid fa-caret-down"></i>
                       <br />
                       <span>news</span>
+                    </div>
+                    <div class="bottom">
+                      <ul class="inner_ul">
+                        <li class="inner_menu_item">
+                          <a href="#">Dark</a>
+                        </li>
+                        <li class="inner_menu_item">
+                          <a href="#">Shooter</a>
+                        </li>
+                        <li class="inner_menu_item">
+                          <a href="#">Anime</a>
+                        </li>
+                        <li class="inner_menu_item">
+                          <a href="#">Light</a>
+                        </li>
+                        <li class="inner_menu_item">
+                          <a href="#">Landing</a>
+                        </li>
+                      </ul>
                     </div>
                   </li>
                   <li class="navbar_menu_item">
@@ -79,18 +117,56 @@
             </div>
             <div class="header_right">
               <ul>
-                <li>
+                <li class="header_right_ul">
                   <div class="theme">
                     Theme
                     <i class="fa-solid fa-caret-down"></i>
                     <br />
                     <span>Buy&Docs</span>
                   </div>
+                  <div class="bottom_right">
+                    <ul class="inner_ul">
+                      <li class="inner_menu_item">
+                        <a href="#">Dark</a>
+                      </li>
+                      <li class="inner_menu_item">
+                        <a href="#">Shooter</a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
                 <li>
                   <div class="user_login">
-                    <i class="fa-solid fa-user"></i>
-                    <i class="fa-solid fa-caret-down"></i>
+                    <div class="user_login_icon">
+                      <i class="fa-solid fa-user"></i>
+                      <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <div class="user_container">
+                      <h1>Registration</h1>
+                      <div class="form_inputs">
+                        <form action="">
+                          <input
+                            type="text"
+                            placeholder="Enter your username"
+                            required
+                          />
+                          <input
+                            type="password"
+                            placeholder="Enter your password"
+                            required
+                          />
+                        </form>
+                      </div>
+                      <div class="checkbox">
+                        <input type="checkbox" name="" id="" />
+                        <span>Remember Me</span>
+                      </div>
+                      <button type="submit">Register Now</button>
+                      <div class="footer">
+                        <span>Already have an account</span>
+                        <a href="#">Login now</a>
+                      </div>
+                    </div>
                   </div>
                 </li>
                 <li>
@@ -188,68 +264,99 @@
               placeholder="Search Products..."
             />
             <div class="range_info">
-                <p>Filter by price</p>
+              <p>Filter by price</p>
             </div>
-            <input type="range" name="" id="" />
+            <input type="range" name="inpt" id="inpt" min="0" max="40" />
             <div class="filtered">
               <p>Price:$0 - $0</p>
-              <button>Filter</button>
+              <button id="filter_btn">Filter</button>
             </div>
             <div class="range_info">
-                <p>Next Match</p>
+              <p>Next Match</p>
             </div>
             <span class="text">Next match not found</span>
             <div class="mini_card_container">
-                <div class="mini_card">
-                    <div class="mini_card_image">
-                        <img src="/src/img/card1.jpg" alt="">
-                    </div>
-                    <div class="mini_card_content">
-                        <h4>Middle Earth</h4>
-                        <div class="mini_card_ratings">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                          </div>
-                        <p>$29.99</p>
-                    </div>
+              <div class="mini_card">
+                <div class="mini_card_image">
+                  <img src="/src/img/card1.jpg" alt="" />
                 </div>
-                <div class="mini_card">
-                    <div class="mini_card_image">
-                        <img src="/src/img/card1.jpg" alt="">
-                    </div>
-                    <div class="mini_card_content">
-                        <h4>Middle Earth</h4>
-                        <div class="mini_card_ratings">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                          </div>
-                        <p>$29.99</p>
-                    </div>
+                <div class="mini_card_content">
+                  <h4>Middle Earth</h4>
+                  <div class="mini_card_ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <p>$29.99</p>
                 </div>
-                <div class="mini_card">
-                    <div class="mini_card_image">
-                        <img src="/src/img/card1.jpg" alt="">
-                    </div>
-                    <div class="mini_card_content">
-                        <h4>Middle Earth</h4>
-                        <div class="mini_card_ratings">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                          </div>
-                        <p>$29.99</p>
-                    </div>
+              </div>
+              <div class="mini_card">
+                <div class="mini_card_image">
+                  <img src="/src/img/card1.jpg" alt="" />
                 </div>
+                <div class="mini_card_content">
+                  <h4>Middle Earth</h4>
+                  <div class="mini_card_ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <p>$29.99</p>
+                </div>
+              </div>
+              <div class="mini_card">
+                <div class="mini_card_image">
+                  <img src="/src/img/card1.jpg" alt="" />
+                </div>
+                <div class="mini_card_content">
+                  <h4>Middle Earth</h4>
+                  <div class="mini_card_ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <p>$29.99</p>
+                </div>
+              </div>
             </div>
           </form>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="footer_content">
+        <h2>Connect sosial with youplay</h2>
+        <div class="sosial_media">
+          <div class="sosial_media_cards">
+            <div class="sosial_media_icons">
+              <i class="fa-brands fa-square-facebook"></i>
+            </div>
+            <span>Like on Facebook</span>
+          </div>
+          <div class="sosial_media_cards">
+            <div class="sosial_media_icons">
+              <i class="fa-brands fa-square-twitter"></i>
+            </div>
+            <span>Like on Twitter</span>
+          </div>
+          <div class="sosial_media_cards">
+            <div class="sosial_media_icons">
+              <i class="fa-brands fa-google-plus-g"></i>
+            </div>
+            <span>Like on Google+</span>
+          </div>
+          <div class="sosial_media_cards">
+            <div class="sosial_media_icons">
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+            <span>Like on Youtube</span>
+          </div>
         </div>
       </div>
     </section>
